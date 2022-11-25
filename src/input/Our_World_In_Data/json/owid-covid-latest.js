@@ -13,4 +13,14 @@ csv().fromStream(request.get('https://raw.githubusercontent.com/owid/covid-19-da
             console.log('complete');
         }
         );
+        fs.writeFile("../../../../public/data-covid/json/covid-custom-latest.json", JSON.stringify(jsonArrayObj), function (err) {
+            if (err) throw err;
+            console.log('Thanh Cong');
+        }
+        );
+        fs.writeFile("../../../../public/maps/world-population.json", JSON.stringify(jsonArrayObj), function (err) {
+            if (err) throw err;
+            console.log('Map world : Thanh cong ');
+        }
+        );
     })

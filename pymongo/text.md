@@ -33,4 +33,4 @@ db.vaccines.deleteMany( { orderExpDate : {"$last_observation_date" : new Date(YE
 py .\covid-latest_mongo.py ; py .\news-cases.py ; py .\news-deaths.py ; py .\total-cases.py ; py .\total-deaths.py
 
 2. Xóa kho dữ liệu cũ để cập nhật dữ liệu mới
-py .\delete-covid-latest_mongo.py ; py .\delete-news-cases.py ; py .\delete-news-deaths.py ; py .\delete-total-cases.py ; py .\delete-total-deaths.py
+py .\delete-covid-latest_mongo.py ; py .\delete-news-cases.py ; py .\news-deaths.py ; py .\delete-total-cases.py ; py .\delete-total-deaths.py
